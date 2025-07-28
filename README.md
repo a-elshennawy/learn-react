@@ -13,6 +13,7 @@
 <li>useId</li>
 <li>UseTransition</li>
 <li>UseDeferredValue</li>
+<li>UseSyncExternalStore</li>
 </ol>
 <br>
 <p>How to :</p>

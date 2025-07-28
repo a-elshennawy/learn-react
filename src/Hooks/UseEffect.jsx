@@ -18,20 +18,18 @@ export default function UseEffect() {
 
   return (
     <>
-      <div className="mainContainer">
-        <h1>posts</h1>
-        <ul>
-          {/* mapping on our data */}
-          {data.map((item) => (
-            // unique key to avoid messy console
-            // (be aware that id, title,body are in the response of the API we using so u might need to see you API response first using console.log(json))
-            <li key={item.id}>
-              <strong>{item.title}</strong> <br />
-              <span>{item.body}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
+      <h1>posts</h1>
+      <ul>
+        {/* mapping on our data */}
+        {data.map((item) => (
+          // unique key to avoid messy console
+          // (be aware that id, title,body are in the response of the API we using so u might need to see you API response first using console.log(json))
+          <li key={item.id}>
+            <strong>{item.title}</strong> <br />
+            <span>{item.body}</span>
+          </li>
+        ))}
+      </ul>
     </>
   );
 }
