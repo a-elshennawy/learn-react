@@ -1,6 +1,7 @@
 import "./App.css";
 import ContextComp from "./Hooks/ContextComp";
 import UseContext from "./Hooks/UseContext";
+import UseDeferredValue from "./Hooks/UseDeferredValue";
 import UseEffect from "./Hooks/UseEffect";
 import UseId from "./Hooks/UseId";
 import UseImperativeHandle from "./Hooks/UseImperativeHandle";
@@ -16,7 +17,7 @@ function App() {
     <>
       <div className="mainContainer">
         {/* import your comp. right here */}
-        <UseTransition />
+        <UseDeferredValue />
       </div>
     </>
   );

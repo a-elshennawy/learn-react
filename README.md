@@ -12,6 +12,7 @@
 <li>UseInsertionEffect</li>
 <li>useId</li>
 <li>UseTransition</li>
+<li>UseDeferredValue</li>
 </ol>
 <br>
 
