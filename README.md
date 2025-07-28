@@ -10,6 +10,7 @@ Recommended Order:
 <li>UseRef</li>
 <li>useImperativeHandle</li>
 <li>UseLayoutEffect</li>
+<li>UseInsertionEffect</li>
 
 </ol>
 <br>
