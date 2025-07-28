@@ -3,12 +3,14 @@
   text-transform: capitalize !important;
 }
 
+/* by default it's dark */
 body {
   overflow-x: hidden;
   background-color: #000;
   color: #fff;
 }
 
+/* incase changed to light mode (pls don't it's too bright) */
 body.light {
   background-color: #fff;
   color: #000;

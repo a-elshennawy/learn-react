@@ -1,7 +1,11 @@
 import { useState } from "react";
 
 export default function UseState() {
+  // the variable and the SetVariable as UseState(the initial value for your variable)
   const [fucks, setFucks] = useState(0);
+
+  // here's just simple functions to handle hoe your variable changes
+  // (SetVariable((variable)=> whatever you need to happen to your variable))
 
   const incFucks = () => {
     setFucks((fucks) => fucks + 1);
