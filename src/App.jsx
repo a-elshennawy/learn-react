@@ -9,12 +9,14 @@ import UseLayoutEffect from "./Hooks/UseLayoutEffect";
 import UseReducer from "./Hooks/UseReducer";
 import UseRef from "./Hooks/UseRef";
 import UseState from "./Hooks/UseState";
+import UseTransition from "./Hooks/UseTransition";
 
 function App() {
   return (
     <>
       <div className="mainContainer">
-        <UseId />
+        {/* import your comp. right here */}
+        <UseTransition />
       </div>
     </>
   );
