@@ -8,7 +8,7 @@ export default function UseImperativeHandle() {
   const inputRef = useRef();
   return (
     <>
-      {/* here we are accessing the child comp. using ref */}
+      {/* here we are accessing the child comp. using ref so it can idetify the cusomized methods inside the current object */}
       <CustomeInput ref={inputRef} />
       <button onClick={() => inputRef.current.refFocus()}>focus</button>
       <button onClick={() => inputRef.current.refClear()}>clear</button>

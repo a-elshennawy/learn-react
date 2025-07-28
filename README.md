@@ -10,9 +10,8 @@ Recommended Order:
 <li>useImperativeHandle</li>
 </ol>
 
-How to ?
-
-import the hook component into App.jsx .mainContainer
+How to :
+import the hook component into App.jsx .mainContainer <br> read the comments carefully
 <br>
 
 <hr>
