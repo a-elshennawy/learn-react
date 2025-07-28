@@ -11,7 +11,7 @@ Recommended Order:
 <li>useImperativeHandle</li>
 <li>UseLayoutEffect</li>
 <li>UseInsertionEffect</li>
-
+<li>useId</li>
 </ol>
 <br>
 
@@ -19,9 +19,9 @@ How to :
 <br>
 
 <ol>
-<li>import the hook component into App.jsx .mainContainer </li>
-<li>run <mark>npm run dev</mark></li>
-<li>in your broswe <mark>http://localhost:5173/</mark> (unless it says otherwise)</li>
+<li>import the hook component into App.jsx .mainContainer (for useContext import ContextComp.jsx)</li>
+<li>run <i>npm run dev</i></li>
+<li>in your broswe <i>http://localhost:5173/</i> (unless it says otherwise)</li>
 <li>read the comments carefully</li>
 </ol>
 

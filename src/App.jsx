@@ -2,6 +2,7 @@ import "./App.css";
 import ContextComp from "./Hooks/ContextComp";
 import UseContext from "./Hooks/UseContext";
 import UseEffect from "./Hooks/UseEffect";
+import UseId from "./Hooks/UseId";
 import UseImperativeHandle from "./Hooks/UseImperativeHandle";
 import UseInsertionEffect from "./Hooks/UseInsertionEffect";
 import UseLayoutEffect from "./Hooks/UseLayoutEffect";
@@ -13,7 +14,7 @@ function App() {
   return (
     <>
       <div className="mainContainer">
-        <UseInsertionEffect />
+        <UseId />
       </div>
     </>
   );
