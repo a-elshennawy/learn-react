@@ -15,17 +15,13 @@
 <li>UseDeferredValue</li>
 </ol>
 <br>
-
-How to :
-<br>
-
+<p>How to :</p>
 <ol>
 <li>import the hook component into App.jsx .mainContainer (for useContext import ContextComp.jsx)</li>
 <li>run <i>npm run dev</i></li>
 <li>in your broswe <i>http://localhost:5173/</i> (unless it says otherwise)</li>
 <li>read the comments carefully</li>
 </ol>
-
 <br>
 <hr>
 <a href="https://ahmed-elshennawy.vercel.app/">contact me :)</a>
