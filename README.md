@@ -6,6 +6,7 @@ recommended order:
 <li>UseEffect</li>
 <li>UseContext</li>
 <li>UseReducer</li>
+<li>UseRef</li>
 </ol>
 
 How to ?
