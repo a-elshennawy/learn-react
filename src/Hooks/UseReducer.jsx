@@ -12,6 +12,8 @@ const reducer = (state, action) => {
       return { ...state, count: state.count - 1, lastAction: "substraction" };
     case "multiple":
       return { ...state, count: state.count * 2, lastAction: "multiplying" };
+    case "reset":
+      return { ...state, count: 0, lastAction: "reset count" };
     case "update_username":
       return {
         ...state,
@@ -59,6 +61,7 @@ export default function UseReducer() {
         <button onClick={() => dispatch({ type: "plus" })}>+</button>
         <button onClick={() => dispatch({ type: "minus" })}>-</button>
         <button onClick={() => dispatch({ type: "multiple" })}>x2</button>
+        <button onClick={() => dispatch({ type: "reset" })}>reset</button>
       </div>
       {/* username */}
       <div>
