@@ -1,7 +1,6 @@
 <h3>React Hooks Repo to help you for a quick start</h3>
 <br>
 <p>Recommended Order :</p>
-<br>
 <ol>
 <li>UseState</li>
 <li>UseEffect</li>
