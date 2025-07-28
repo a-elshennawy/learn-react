@@ -20,8 +20,8 @@ How to :
 
 <ol>
 <li>import the hook component into App.jsx .mainContainer </li>
-<li>run <storng>npm run dev</storng> </li>
-<li>in your broswe http://localhost:5173/ (unless it says otherwise)</li>
+<li>run <mark>npm run dev</mark></li>
+<li>in your broswe <mark>http://localhost:5173/</mark> (unless it says otherwise)</li>
 <li>read the comments carefully</li>
 </ol>
 
