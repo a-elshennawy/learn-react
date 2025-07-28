@@ -1,9 +1,12 @@
 React hooks repo to help you for a quick start
 recommended order:
-1- UseState
-2- UseEffect
-3- UseContext
-4 - UseReducer
+
+<ol>
+<li>UseState</li>
+<li>UseEffect</li>
+<li>UseContext</li>
+<li>UseReducer</li>
+</ol>
 
 How to ?
 
