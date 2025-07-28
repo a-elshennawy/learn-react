@@ -10,9 +10,10 @@ Recommended Order:
 <li>useImperativeHandle</li>
 </ol>
 
+<br>
+<hr>
 How to :
 import the hook component into App.jsx .mainContainer <br> read the comments carefully
 <br>
-
 <hr>
 <a href="https://ahmed-elshennawy.vercel.app/">contact me :)</a>
