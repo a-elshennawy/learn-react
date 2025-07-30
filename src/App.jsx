@@ -20,7 +20,7 @@ function App() {
     <>
       <div className="mainContainer">
         {/* import your comp. right here */}
-        <UseMemo />
+        <UseCallback />
       </div>
     </>
   );

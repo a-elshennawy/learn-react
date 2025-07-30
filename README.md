@@ -5,6 +5,7 @@
 <li>UseState</li>
 <li>UseEffect</li>
 <li>UseMemo</li>
+<li>UseCallback</li>
 <li>UseContext</li>
 <li>UseReducer</li>
 <li>UseRef</li>
