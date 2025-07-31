@@ -19,6 +19,8 @@
 <li>UseDebugValue</li>
 <li>UseFormStatus</li>
 <li>UseFormState</li>
+<li>UseActionState</li>
+<li>UseOptimistic</li>
 
 </ol>
 <br>
