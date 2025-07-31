@@ -16,6 +16,10 @@
 <li>UseTransition</li>
 <li>UseDeferredValue</li>
 <li>UseSyncExternalStore</li>
+<li>UseDebugValue</li>
+<li>UseFormStatus</li>
+<li>UseFormState</li>
+
 </ol>
 <br>
 <p>How to :</p>
