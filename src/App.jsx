@@ -19,13 +19,14 @@ import UseTransition from "./Hooks/UseTransition";
 import UseFormState from "./Hooks/UseFormState";
 import UseActionState from "./Hooks/UseActionState";
 import UseOptimistic from "./Hooks/useOptimistic";
+import Use from "./Hooks/Use";
 
 function App() {
   return (
     <>
       <div className="mainContainer">
         {/* import your comp. right here */}
-        <UseOptimistic />
+        <Use />
       </div>
     </>
   );
