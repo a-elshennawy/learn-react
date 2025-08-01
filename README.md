@@ -34,4 +34,8 @@
 </ol>
 <br>
 <hr>
+<p>for more refernces :</p>
+<br>
+<a href="https://react.dev/reference/react/hooks">React Hooks Official docs</a>
+<br>
 <a href="https://ahmed-elshennawy.vercel.app/">contact me :)</a>
