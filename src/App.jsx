@@ -24,10 +24,12 @@ import Use from "./Hooks/Use";
 function App() {
   return (
     <>
-      <div className="mainContainer">
-        {/* import your comp. right here */}
-        <Use />
-      </div>
+      <UseContext>
+        <div className="mainContainer">
+          {/* import your comp. right here */}
+          <ContextComp />
+        </div>
+      </UseContext>
     </>
   );
 }
