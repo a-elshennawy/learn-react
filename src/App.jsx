@@ -20,6 +20,7 @@ import UseFormState from "./Hooks/UseFormState";
 import UseActionState from "./Hooks/UseActionState";
 import UseOptimistic from "./Hooks/useOptimistic";
 import Use from "./Hooks/Use";
+import DisplayProducts from "./Hooks/CompoundComponets/DisplayProducts";
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
       <UseContext>
         <div className="mainContainer">
           {/* import your comp. right here */}
-          <ContextComp />
+          <DisplayProducts />
         </div>
       </UseContext>
     </>
