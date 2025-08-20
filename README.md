@@ -34,6 +34,12 @@
 </ol>
 <br>
 <hr>
+<h4>also find :</h4>
+<ol>
+<li>Compound Components (import the DisplayProducts for demonistration)</li>
+<li>Render Props (import Tracker for demonistration)</li>
+</ol>
+<hr>
 <p>for more refernces :</p>
 <br>
 <a href="https://react.dev/reference/react/hooks">React Hooks Official docs</a>
