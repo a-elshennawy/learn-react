@@ -38,6 +38,7 @@
 <ol>
 <li>Compound Components (import the DisplayProducts for demonistration)</li>
 <li>Render Props (import Tracker for demonistration)</li>
+<li>Higher Order components (import DataDisplay.jsx)</li>
 </ol>
 <hr>
 <p>for more refernces :</p>

@@ -22,6 +22,7 @@ import UseOptimistic from "./Hooks/useOptimistic";
 import Use from "./Hooks/Use";
 import DisplayProducts from "../src/CompoundComponets/DisplayProducts";
 import Tracker from "./RenderProps/Tracker";
+import DataDisplay from "./HOCs/DataDisplay";
 
 function App() {
   return (
@@ -29,7 +30,7 @@ function App() {
       <UseContext>
         <div className="mainContainer">
           {/* import your comp. right here */}
-          <Tracker />
+          <DataDisplay />
         </div>
       </UseContext>
     </>
