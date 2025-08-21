@@ -23,6 +23,7 @@ import Use from "./Hooks/Use";
 import DisplayProducts from "../src/CompoundComponets/DisplayProducts";
 import Tracker from "./RenderProps/Tracker";
 import DataDisplay from "./HOCs/DataDisplay";
+import ParentComponent from "./ReactMemo/ParentComponent";
 
 function App() {
   return (
@@ -30,7 +31,7 @@ function App() {
       <UseContext>
         <div className="mainContainer">
           {/* import your comp. right here */}
-          <DataDisplay />
+          <ParentComponent />
         </div>
       </UseContext>
     </>
