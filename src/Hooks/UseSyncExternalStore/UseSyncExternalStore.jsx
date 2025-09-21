@@ -1,4 +1,4 @@
-// it's releazed in react 18 and it's for connection to EXTERNAL stores while avoiding concurrent render
+// it's released in react 18 and it's for connection to EXTERNAL stores while avoiding concurrent render
 // and sharing the data coming back across multiple comps (listeners) via store.js (PokemonStore.js in our case)
 import { useEffect, useSyncExternalStore } from "react";
 import { fetchPokemons, getState, subscribe } from "./PokemonsStore";

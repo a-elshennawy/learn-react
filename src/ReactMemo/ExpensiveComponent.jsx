@@ -1,30 +1,30 @@
 // in this component we will be assuming that this is a really huge componenent (expensive)
 // we can't afford to rerender it if something else in the home page render
-// we will import im another page (ParentComponent) where other thing happens
+// we will import in another page (ParentComponent) where other thing happens
 import React, { useState, useEffect } from "react";
 
 // be aware that most of the time it's used for components with props so re-rendring is decided with the change of these props
 function ExpensiveComponent() {
-  const [users, setUsers] = useState([]);
+  const [albums, setAlbums] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     fetch("https:jsonplaceholder.typicode.com/albums")
       .then((response) => response.json())
       .then((data) => {
-        setUsers(data);
+        setAlbums(data);
         setLoading(false);
       });
   }, []);
 
   if (loading) {
-    return <div>Loading users...</div>;
+    return <div>Loading albums...</div>;
   }
   return (
     <>
       <div className="text-center">
         <h2>albums list</h2>
-        {users.map((album) => (
+        {albums.map((album) => (
           <div key={album.id}>
             <p>{album.title}</p>
           </div>

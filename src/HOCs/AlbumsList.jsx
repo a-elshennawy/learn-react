@@ -1,4 +1,4 @@
-import withDataFetching from "./WithDataFetching";
+import withDataFetching from "./withDataFetching";
 
 const AlbumsList = ({ data }) => {
   return (

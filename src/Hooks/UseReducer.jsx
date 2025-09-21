@@ -1,7 +1,7 @@
-// it's so similar to UseState but it allows you to manipulate multiple stuff (go to line 32 first)
+// it's so similar to UseState but it allows you to manipulate multiple stuff (go to line 36 first)
 import { useReducer, useEffect } from "react";
 
-// this is where stuf going (state,actions applied to state)
+// this is where stuff going (state,actions applied to state)
 const reducer = (state, action) => {
   // using switch case to handle what will happen to your state
   switch (action.type) {
@@ -25,19 +25,19 @@ const reducer = (state, action) => {
       return {
         ...state,
         darkMode: !state.darkMode,
-        lastAction: `switched to ${
-          state.darkMode ? "light 🌞" : "dark 🌚"
-        } mode`,
+        lastAction: `switched to ${state.darkMode ? "light" : "dark"} mode`,
+        // in here it's reversed as the last action deals with the old not the new dark mode vlaue
       };
   }
 };
 
 export default function UseReducer() {
-  // here you start declaring state (the thing that we will manipulate which can include more than 1 thing) and dispatch (which will have the actions will be changing the state)
+  // here you start declaring state (stuff to manipulate) and dispatch (which will have the actions changing the state)
 
-  // {count: 0,username: "",
-  //   darkMode: true,
-  //   lastAction: "no actions yet",} <= state
+  // {count: 0,
+  // username: "",
+  // darkMode: true,
+  // lastAction: "no actions yet",} <= state
 
   // reducer ? go to line 4
   const [state, dispatch] = useReducer(reducer, {

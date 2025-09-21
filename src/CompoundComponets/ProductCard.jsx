@@ -1,9 +1,9 @@
 import { useContext, createContext } from "react";
 
-// 1- here we will create the context of the product data
+// 1. here we will create the context of the product data
 const ProductContext = createContext(null);
 
-// 2- parent component which will hold the product data & provide it's to children
+// 2. parent component which will hold the product data & provide it's to children
 const ProductCard = ({ product, children }) => {
   //insure product data is provided
   if (!product) {
@@ -19,7 +19,7 @@ const ProductCard = ({ product, children }) => {
   );
 };
 
-// 3- child component: ProductImage
+// 3. child component: ProductImage
 // this comp. consumes the product data from the context
 const ProductImage = ({ style, ...props }) => {
   const product = useContext(ProductContext);
@@ -36,14 +36,14 @@ const ProductImage = ({ style, ...props }) => {
   );
 };
 
-// 4- child component: ProductTitle
+// 4. child component: ProductTitle
 const ProductTitle = ({ style, ...props }) => {
   const product = useContext(ProductContext);
   if (!product) return null;
 
   return (
     <h3 style={{ ...productTitleStyles, ...style }} {...props}>
-      ${product.name}
+      {product.name}
     </h3>
   );
 };
@@ -55,7 +55,7 @@ const ProductPrice = ({ style, ...props }) => {
 
   return (
     <p style={{ ...productPriceStyles, ...style }} {...props}>
-      ${product.price.toFixed(2)}
+      {product.price.toFixed(2)}
     </p>
   );
 };
@@ -72,19 +72,19 @@ const ProductDescription = ({ style, ...props }) => {
   );
 };
 
-// child component: AddToCartButton
-const AddToCartButton = ({ onclick, style, ...props }) => {
-  const product = useContext(ProductCard);
+// 7. child component: AddToCartButton
+const AddToCartButton = ({ onClick, style, ...props }) => {
+  const product = useContext(ProductContext);
   if (!product) return null;
 
   const handleClick = () => {
     alert(`added ${product.name} to cart!`);
-    if (onclick) onclick(product);
+    if (onClick) onClick(product);
   };
 
   return (
     <button
-      onclick={handleClick}
+      onClick={handleClick}
       style={{ ...addToCartButtonStyles, ...style }}
       {...props}
     >

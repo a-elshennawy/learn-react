@@ -20,7 +20,7 @@ export default function MouseTracker({ render }) {
   return (
     <>
       {/* in here we reneder the position (x,y) */}
-      <div style={{ height: "100dvh" }}>{render(position)}</div>
+      <div>{render(position)}</div>
     </>
   );
 }

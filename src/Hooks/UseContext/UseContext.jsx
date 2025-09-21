@@ -29,7 +29,8 @@ export default function UseContext({ children }) {
   );
 }
 
-// here's another comp. just as a switch between themes
+// here's another comp. just as a switch between themes (have to be capitalized)
+// this comp is the the actuall switch (instead of making a whole new comp just to implementt context innit)
 export const ThemeToggle = () => {
   // here's to start using our Context by UseContext hook(your decraled Context)
   const { theme, setTheme } = useContext(themeContext);

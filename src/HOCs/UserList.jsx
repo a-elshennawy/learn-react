@@ -1,4 +1,4 @@
-import withDataFetching from "./WithDataFetching";
+import withDataFetching from "./withDataFetching";
 
 // passing the data
 const UserList = ({ data }) => {

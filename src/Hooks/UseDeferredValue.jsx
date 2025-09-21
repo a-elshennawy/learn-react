@@ -8,11 +8,11 @@ export default function UseDeferredValue() {
   const items = Array.from({ length: 10000 }, (_, i) => `Item ${i + 1}`);
 
   //   here we're creating some kind of a copy form the query it self (deferred version)
-  const defrredQuery = useDeferredValue(query);
+  const deferredQuery = useDeferredValue(query);
 
   //   search handler
   const filteredItems = items.filter((item) =>
-    item.toLowerCase().includes(defrredQuery.toLowerCase())
+    item.toLowerCase().includes(deferredQuery.toLowerCase())
   );
 
   return (
@@ -26,7 +26,7 @@ export default function UseDeferredValue() {
         />
         {/* new kind of loading screen */}
         {/*means that result is not up yet */}
-        {query !== defrredQuery && <p>loading...</p>}
+        {query !== deferredQuery && <p>loading...</p>}
 
         {/* result */}
         <ul>

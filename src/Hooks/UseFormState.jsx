@@ -15,11 +15,11 @@ function SubmitButton() {
 
 export default function UseFormState() {
   // here we start using the hook as a state of the form and the action (which will be submitting the form)
-  //   and giving it the formData to be able to validate the inputs as we will see using normal if conditions
+  // and giving it the formData to be able to validate the inputs as we will see using normal if conditions
   const [state, formAction] = useFormState(async (prev, formData) => {
     // there's a name and it's > 6 chars
-    if (!formData.get("name") || formData.get("name").length < 6) {
-      return { error: "name have to be at least 6 characters" };
+    if (!formData.get("name") || formData.get("name").length < 4) {
+      return { error: "name have to be at least 4 characters" };
     }
 
     // there's an age & > 18 and < 45

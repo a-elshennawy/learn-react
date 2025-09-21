@@ -9,10 +9,9 @@
 <li>UseContext()</li>
 <li>UseReducer()</li>
 <li>UseRef()</li>
-<li>useImperativeHandle()</li>
 <li>UseLayoutEffect()</li>
 <li>UseInsertionEffect()</li>
-<li>useId()</li>
+<li>UseId()</li>
 <li>UseTransition()</li>
 <li>UseDeferredValue()</li>
 <li>UseSyncExternalStore()</li>

@@ -11,13 +11,22 @@ export default function UseLayoutEffect() {
       setBoxWidth(boxRef.current.offsetWidth);
     }
   });
+
+  //you can uncomment this and comment the useLayoutEffect and hard refresh the page to see the different :)
+
+  // useEffect(() => {
+  //   if (boxRef.current) {
+  //     setBoxWidth(boxRef.current.offsetWidth);
+  //   }
+  // });
+
   return (
     <>
       <div>
         <div
           ref={boxRef}
           style={{
-            width: "50%",
+            width: "40%", //<= offsetWidth
             margin: "auto",
             height: "100px",
             backgroundColor: "#fff",

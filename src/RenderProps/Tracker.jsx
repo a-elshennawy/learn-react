@@ -5,8 +5,8 @@ export default function Tracker() {
   return (
     <>
       <h1>your mouse tracker says :</h1>
-      {/* here we render the x,y which are being calculated in the render component */}
-      {/* that's whey they call it render props */}
+      {/* here we render the x,y which are being calculated in the render component --> (MouseTracker.jsx) */}
+      {/* that's why it's called render props */}
       <MouseTracker
         render={({ x, y }) => (
           <h2>

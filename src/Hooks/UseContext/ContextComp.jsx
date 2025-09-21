@@ -3,7 +3,8 @@ import { useContext } from "react";
 import { ThemeToggle } from "./UseContext";
 
 // this comp. is to demo. how to actually use the context across the app
-// in cas importing it to App. make sure th wrap it within <useContext></usecontext> which is the comonent not the hook
+// in case importing it to App. make sure to wrap it within <UseContext></UseContext> which is the component we made not the hook
+// in actuall projects most likely you'll be callining it ThemeContext or ThemeProvider
 
 export default function ContextComp() {
   // here u import what u need from the UseContext comp. which is theme so u can display theme name

@@ -18,4 +18,4 @@ export default function UseId() {
 }
 // so important for those who gonna use SSR (server side rendering)
 // so you don't have to overwhelm yourself with naming
-// DO NOT USE THAT FOR KEY={} WHEN MAPPING OVER SOMETHING TO CREATE A LIST WE DON'T DO THAT HERE
+// DO NOT USE THAT FOR KEY={} WHEN MAPPING OVER SOMETHING TO CREATE A LIST WE DON'T DO THAT HERE :(

@@ -1,10 +1,12 @@
-// it's basically to accessing DOM directly & store values of previous states that changed even tho you don't wanna dispaly these values
+// it's basically to access DOM directly & store values of previous states that changed
+// even tho you don't wanna dispaly these values
 import { useEffect, useRef, useState } from "react";
 export default function UseRef() {
   // creating a refrence directly to a DOM element
+  // we have to assign it to a DOM elemenmt to link it (ref={inputref})
   const inputRef = useRef();
 
-  //   the next function (current) doesn't cause rerender (that's the point)
+  //   the function (current) doesn't cause rerender (that's the point)
   //   catching the ref. value
   const logRefValue = () => {
     console.log("ref. value:", inputRef.current.value);
@@ -28,7 +30,8 @@ export default function UseRef() {
   //   to store previous states
   const [count, setCount] = useState(0);
 
-  //   here setting a ref to store the previous count innit (starting with 0 as we gonna use it as actuall variable)
+  //   here setting a ref to store the previous count innit
+  //   (starting with 0 as we gonna use it as actuall variable)
   const previousCount = useRef(0);
 
   //   to track when count
@@ -46,7 +49,7 @@ export default function UseRef() {
       <hr />
       {/* storing previous states */}
       <h2>storing previous states</h2>
-      <h3>current count :{count}</h3>
+      <h3>current count : {count}</h3>
       <h4>previous count : {previousCount.current}</h4>
       <button
         onClick={() => {

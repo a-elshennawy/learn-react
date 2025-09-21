@@ -7,10 +7,10 @@ export default function UseInsertionEffect() {
     // creating the style we need to insert
     const style = document.createElement("style");
     style.textContent = `.dynamic-class{
-  color:white;
+  color:#fff;
   background-color:#fd0000;
   padding:20px 10px;
-  width:50%;
+  width:70%;
   margin:auto;
   }`;
 

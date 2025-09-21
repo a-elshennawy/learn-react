@@ -4,7 +4,6 @@ import { useEffect, useState, use, Suspense } from "react";
 async function fetchPosts() {
   const res = await fetch("https://jsonplaceholder.typicode.com/posts");
   const data = await res.json();
-  console.log(data);
   return data;
 }
 
@@ -12,16 +11,17 @@ async function fetchPosts() {
 const postsPromise = fetchPosts();
 
 export default function Use() {
-  //   const [data, setData] = useState([]); //<-- not going to nee this anymore
+  //   const [data, setData] = useState([]); //<-- don't need this anymore
 
   //   old way to fetch an Api
+
   //   useEffect(() => {
   //     fetch("https://jsonplaceholder.typicode.com/posts")
   //       .then((response) => response.json())
   //       .then((json) => setData(json));
   //   },[]);
 
-  //   the hook is using the promise not the fetch function
+  // the hook is using the promise not the fetch function
   // if it does the fetch function it will result in a loop
   const posts = use(postsPromise);
 

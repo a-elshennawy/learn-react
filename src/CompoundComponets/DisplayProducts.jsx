@@ -59,10 +59,7 @@ export default function DisplayProducts() {
 
 // App Level Styling
 const appContainerStyles = {
-  fontFamily: "Arial, sans-serif",
-  padding: "20px",
-  backgroundColor: "#f4f7f6",
-  minHeight: "100vh",
+  backgroundColor: "#000",
 };
 
 const cardRowStyles = {

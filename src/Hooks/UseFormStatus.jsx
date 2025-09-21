@@ -2,7 +2,7 @@
 // you will not feel that as you are testing locally
 // usually we use an additional state [isloading, setIsLoading] and disable the submit button if loading but the new hook made it more automated for us
 // if you're goingg to use NextJS make sure you put
-// "use client"; <-- in case NExtJs
+// "use client"; <-- in case NextJs
 
 import { useState } from "react";
 import { useFormStatus } from "react-dom";
@@ -64,5 +64,5 @@ export default function UseFormStatus() {
     </>
   );
 }
-// so eventually it's for form action instead of using loading state to handle slow connection bugs that might results in doubled insertions when the ser spam the button
+// so eventually it's for form action instead of using loading state to handle slow connection bugs that might results in doubled insertions when user spam the button
 // yet loading state is fine in case of simple small forms but sometimes this is needed in more complex cases

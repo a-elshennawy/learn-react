@@ -5,11 +5,11 @@ export default function UseActionState() {
   // [state, action, isPending] <-- same order
   const [state, formAction, isPending] = useActionState(
     async (prev, formData) => {
-      // normal validation we did in useFormState
+      // normal validation as we did in useFormState
 
       // there's a name and it's > 6 chars
-      if (!formData.get("name") || formData.get("name").length < 6) {
-        return { error: "name have to be at least 6 characters" };
+      if (!formData.get("name") || formData.get("name").length < 4) {
+        return { error: "name have to be at least 4 characters" };
       }
 
       // there's an age & > 18 and < 45

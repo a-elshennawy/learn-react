@@ -1,18 +1,19 @@
-// it's used for performance enhancment and avoid functions that is dealing with specific thing to start again wheneever any render happens even if it's related to it
-// specifically when dealing with big amount of data like fetching API you don't that to redone everytime any other state changes even if it's not related to you data
+// it's used for performance enhancment and avoiding functions dealing with specific thing to start again whenever any unrelated render happens
+// specifically when dealing with big amount of data like fetching API
+// you don't want that to rerender everytime any other state changes even if it's not related to you data
+
 import { useState, useEffect, useMemo } from "react";
 export default function UseMemo() {
   // this the state that will be changing and cause the issue of re-rendering
   const [toggle, setToggle] = useState(false);
-  //   for the API fetching
+  //   for the API fetching (which we need to avoid it being re-rendered of the thingy above)
   const [data, setData] = useState([]);
 
   //   fetching 500 comments (postId, Id, name, email, body)
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/comments")
       .then((response) => response.json())
-      .then((json) => setData(json))
-      .catch((err) => console.error("error fetching data", err));
+      .then((json) => setData(json));
   }, []);
 
   //we gonna create a function to get us the longest name of these comments
@@ -31,7 +32,7 @@ export default function UseMemo() {
     return longestName;
   };
 
-  //   here is the useMemo .. so instead of calling the function up there which will be excuted each time anything change
+  // here is the useMemo .. so instead of calling the function up there which will be excuted each time anything change
   // we will make excute evertime the data change
 
   const getLongestName = useMemo(() => findLongestName(data), [data]);
