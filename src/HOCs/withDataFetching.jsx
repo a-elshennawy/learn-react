@@ -20,7 +20,7 @@ const withDataFetching = (WrappedComp, url) => {
           console.error("failed fetching data:", err);
           setLoading(false);
         });
-    }, [url]);
+    }, [url]); //<-- dep. list so it changes based on each comp. api end point
 
     if (loading) {
       return <div>Loading...</div>;
@@ -35,4 +35,4 @@ const withDataFetching = (WrappedComp, url) => {
 
 export default withDataFetching;
 
-// so in this component is actually a function that takes a component then enhance it and return another component
+// so in this component is actually a function that takes a component, enhance it, return it

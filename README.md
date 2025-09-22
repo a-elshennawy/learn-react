@@ -39,6 +39,7 @@
 <li>Render Props (import Tracker for demonistration)</li>
 <li>Higher Order components (import DataDisplay.jsx)</li>
 <li>React.memo (import ParentComponent.jsx)</li>
+<li>Zustand (import MainComp.jsx) check ComplexStore.js first</li>
 
 </ol>
 <hr>
