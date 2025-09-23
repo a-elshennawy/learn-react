@@ -45,10 +45,7 @@
 <h4>also find :</h4>
 <ol>
 <li>in src/jesttesting readme.md to demonistration unit testing using jest</li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
+<li>in src/VitestTesting readme.md to demonistration unit testing using Vitest</li>
 </ol>
 <hr>
 <p>for more refernces :</p>
