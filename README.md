@@ -40,7 +40,15 @@
 <li>Higher Order components (import DataDisplay.jsx)</li>
 <li>React.memo (import ParentComponent.jsx)</li>
 <li>Zustand (import MainComp.jsx) check ComplexStore.js first</li>
-
+</ol>
+<hr>
+<h4>also find :</h4>
+<ol>
+<li>in src/jesttesting readme.md to demonistration unit testing using jest</li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
 </ol>
 <hr>
 <p>for more refernces :</p>
