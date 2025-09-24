@@ -33,7 +33,7 @@
 </ol>
 <br>
 <hr>
-<h4>also find :</h4>
+<h4>also find React Patterns :</h4>
 <ol>
 <li>Compound Components (import the DisplayProducts for demonistration)</li>
 <li>Render Props (import Tracker for demonistration)</li>
@@ -42,7 +42,7 @@
 <li>Zustand (import MainComp.jsx) check ComplexStore.js first</li>
 </ol>
 <hr>
-<h4>also find :</h4>
+<h4>also find Testin (unit & E2E) :</h4>
 <ol>
 <li>in src/jesttesting readme.md to demonistration unit testing using Jest</li>
 <li>in src/VitestTesting readme.md to demonistration unit testing using Vitest</li>
