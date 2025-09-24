@@ -23,9 +23,9 @@ import DisplayProducts from "../src/CompoundComponets/DisplayProducts";
 import Tracker from "./RenderProps/Tracker";
 import DataDisplay from "./HOCs/DataDisplay";
 import ParentComponent from "./ReactMemo/ParentComponent";
-import ZustandCompoenet from "./ZustandStores/Components/Count";
 import MainComp from "./ZustandStores/Components/MainComp";
-import Counter from "./CypressTesting/Counter";
+import CypressCounter from "./CypressTesting/CypressCounter";
+import PlayWrigthCounter from "./PlayWrightTesting/PlayWrigthCounter";
 
 function App() {
   return (
@@ -33,7 +33,7 @@ function App() {
       <UseContext>
         <div className="mainContainer">
           {/* import your comp. right here */}
-          <Counter />
+          <PlayWrigthCounter />
         </div>
       </UseContext>
     </>
