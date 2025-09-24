@@ -44,8 +44,10 @@
 <hr>
 <h4>also find :</h4>
 <ol>
-<li>in src/jesttesting readme.md to demonistration unit testing using jest</li>
+<li>in src/jesttesting readme.md to demonistration unit testing using Jest</li>
 <li>in src/VitestTesting readme.md to demonistration unit testing using Vitest</li>
+<li>in src/CypressTesting readme.md to demonistration E2E testing using Cypress (here we will have to import the Counter.jsx that is inside the folder)</li>
+
 </ol>
 <hr>
 <p>for more refernces :</p>

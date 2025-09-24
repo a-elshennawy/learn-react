@@ -25,6 +25,7 @@ import DataDisplay from "./HOCs/DataDisplay";
 import ParentComponent from "./ReactMemo/ParentComponent";
 import ZustandCompoenet from "./ZustandStores/Components/Count";
 import MainComp from "./ZustandStores/Components/MainComp";
+import Counter from "./CypressTesting/Counter";
 
 function App() {
   return (
@@ -32,7 +33,7 @@ function App() {
       <UseContext>
         <div className="mainContainer">
           {/* import your comp. right here */}
-          <MainComp />
+          <Counter />
         </div>
       </UseContext>
     </>

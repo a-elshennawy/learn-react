@@ -16,10 +16,9 @@ npm install --save-dev vitest @testing-library/react @testing-library/jest-dom j
 in step 5 be sure to use .jsx extension as Vitest is built on top of Vite. Vite, by default, is configured to handle modern JavaScript and JSX, but it processes files based on their extension.
 
 or in your Vite.config.js you can change
-plugins: [react()], and make it plugins: [
+plugins: [react()], and make it
+
+plugins: [
 react({
-
-      include: '**/*.jsx,**/*.js',
-    }),
-
-],
+include: '**/*.jsx,**/*.js',
+}),],
