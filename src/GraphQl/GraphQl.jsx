@@ -24,6 +24,11 @@ function GraphQLContent() {
         results {
           name
           gender
+          species
+          origin{
+          name
+          }
+          image
         }
       }
     }
@@ -51,8 +56,11 @@ function GraphQLContent() {
           {data.characters.results.map((character, index) => (
             <div key={index}>
               <h4>
-                {character.name} he is a {character.gender}
+                {character.name} / {character.gender} / {character.species} /{" "}
+                {""}
+                {character.origin.name}
               </h4>
+              <img src={character.image} alt="" />
             </div>
           ))}
         </div>
