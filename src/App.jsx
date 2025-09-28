@@ -26,6 +26,7 @@ import ParentComponent from "./ReactMemo/ParentComponent";
 import MainComp from "./ZustandStores/Components/MainComp";
 import CypressCounter from "./CypressTesting/CypressCounter";
 import PlayWrigthCounter from "./PlayWrightTesting/PlayWrigthCounter";
+import GraphQl from "./GraphQl/GraphQl";
 
 function App() {
   return (
@@ -33,7 +34,7 @@ function App() {
       <UseContext>
         <div className="mainContainer">
           {/* import your comp. right here */}
-          <PlayWrigthCounter />
+          <GraphQl />
         </div>
       </UseContext>
     </>

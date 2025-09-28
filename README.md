@@ -48,7 +48,11 @@
 <li>in src/VitestTesting readme.md to demonistration unit testing using Vitest</li>
 <li>in src/CypressTesting readme.md to demonistration E2E testing using Cypress (will have to import the CypressCounter.jsx inside the folder)</li>
 <li>in src/PlayWrightTesting readme.md to demonistration E2E testing using Playwright (will have to import the PlayWrightCounter.jsx inside the folder)</li>
-
+</ol>
+<hr/>
+<h4>back-end realted</h4>
+<ol>
+<li>GraphQl using urQl in "./src/GraphQl"</li>
 </ol>
 <hr>
 <p>for more refernces :</p>
