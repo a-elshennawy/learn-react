@@ -103,7 +103,7 @@ ProductCard.AddToCartButton = AddToCartButton;
 // then export it
 export default ProductCard;
 
-// basic styling
+// basic styling (you can totally ignore this part it's just style you can do in your css files)
 const productCardStyles = {
   border: "1px solid #ddd",
   borderRadius: "8px",

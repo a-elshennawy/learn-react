@@ -27,6 +27,7 @@ export default function Use() {
 
   return (
     <>
+      {/* you have to have suspense (fallback) */}
       <Suspense fallback={<div>Loading posts...</div>}>
         <h1>Posts</h1>
         <ul>
@@ -38,4 +39,4 @@ export default function Use() {
     </>
   );
 }
-// so it allows to do the await & promise without even doing them or risk the useEffect expensive and mistakes
+// so it allows to do the await & promise without even doing them or risk the useEffect costs and probable mistakes

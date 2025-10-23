@@ -11,6 +11,8 @@ export const useComplexStore = create((set, get) => ({
   // here a normal function to increment the counter BUT with it we call the checkMatch function
   // as to check the count after each process is being done to the counter
   // using get. as it's a get function
+
+  // state is to change over the current state
   inc: () => {
     set((state) => ({ count: state.count + 1 }));
     get().checkMatch();
@@ -22,23 +24,12 @@ export const useComplexStore = create((set, get) => ({
     get().checkMatch();
   },
 
-  // multiply
-  multiply: () => {
-    set((state) => ({ count: state.count * 2 }));
-    get().checkMatch();
-  },
-
-  // divid by 2
-  split: () => {
-    set((state) => ({ count: state.count / 2 }));
-    get().checkMatch();
-  },
-
   // reset to 0
   reset: () => set(() => ({ count: 0 })),
 
   match: false,
   checkMatch: () => {
+    // get the current count value
     const { count } = get();
     if (count === 11) {
       set(() => ({ match: true }));

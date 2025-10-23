@@ -2,12 +2,13 @@ import { useState, useEffect } from "react";
 
 // here it will accept the other components and the url (the api) as args
 const withDataFetching = (WrappedComp, url) => {
-  // the function which will be actually exported and used
+  // the function which will be actually used
   const WithDataFetching = (props) => {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
 
     // here's the logic we need to write only once so we use it more than once in other components
+    // which is normal data fetching logic
     useEffect(() => {
       setLoading(true);
       fetch(url)
@@ -30,7 +31,7 @@ const withDataFetching = (WrappedComp, url) => {
     return <WrappedComp data={data} {...props} />;
   };
 
-  return WithDataFetching;
+  return WithDataFetching; // we return the function which contains the logic
 };
 
 export default withDataFetching;

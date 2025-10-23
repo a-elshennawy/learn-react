@@ -1,8 +1,6 @@
 import Count from "./Count";
 import Inc from "./Inc";
 import Dec from "./Dec";
-import Multiply from "./Multiply";
-import Split from "./Split";
 import Reset from "./Reset";
 import DisplayTheme from "./DisplayTheme";
 import ToggleTheme from "./ToggleTheme";
@@ -17,8 +15,7 @@ export default function MainComp() {
       <Count />
       <Inc />
       <Dec />
-      <Multiply />
-      <Split />
+
       <Reset />
       <ChackMatchComp />
       <DisplayTheme />

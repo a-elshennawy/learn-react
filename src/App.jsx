@@ -34,7 +34,7 @@ function App() {
       <UseContext>
         <div className="mainContainer">
           {/* import your comp. right here */}
-          <Use />
+          <MainComp />
         </div>
       </UseContext>
     </>
