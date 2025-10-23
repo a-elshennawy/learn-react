@@ -7,9 +7,10 @@ export default function UseInsertionEffect() {
     // creating the style we need to insert
     const style = document.createElement("style");
     style.textContent = `.dynamic-class{
-  color:#fff;
-  background-color:#fd0000;
-  padding:20px 10px;
+  color:#000;
+  background-color:#fd0;
+  padding:20px;
+  border-radius:10px;
   width:70%;
   margin:auto;
   }`;
@@ -25,7 +26,9 @@ export default function UseInsertionEffect() {
 
   return (
     <>
-      <div className="dynamic-class">styled with useInsertionEffect !!</div>
+      <div className="dynamic-class">
+        <h3>styled with useInsertionEffect !!</h3>
+      </div>
     </>
   );
 }

@@ -22,6 +22,8 @@ export default function UseTransition() {
     setQuery(value);
 
     // here's where we tell the hook what is the expensive thing and we wrap it around it as callback function
+    // so it strarts transition when whatever is between the {} is done
+    // otherwise keeo isPending true
     startTransition(() => {
       const filtered = items.filter((item) =>
         item.toLowerCase().includes(value.toLowerCase())

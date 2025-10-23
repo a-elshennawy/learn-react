@@ -1,4 +1,4 @@
-// it's so similar to UseState but it allows you to manipulate multiple stuff (go to line 36 first)
+// it's so similar to UseState but it allows you to manipulate multiple stuff (go to line 35 first)
 import { useReducer, useEffect } from "react";
 
 // this is where stuff going (state,actions applied to state)
@@ -6,26 +6,40 @@ const reducer = (state, action) => {
   // using switch case to handle what will happen to your state
   switch (action.type) {
     // ...state, to prevent switching the boolean expression or messing with other values
-    case "plus":
-      return { ...state, count: state.count + 1, lastAction: "addition" };
+    case "plus": //whatever is between the "" is what you will call when you want to trigger this action
+      return {
+        ...state,
+        count: state.count + 1,
+        lastAction: "you just did +1 count",
+      };
     case "minus":
-      return { ...state, count: state.count - 1, lastAction: "substraction" };
+      return {
+        ...state,
+        count: state.count - 1,
+        lastAction: "you just did -1 count",
+      };
     case "multiple":
-      return { ...state, count: state.count * 2, lastAction: "multiplying" };
+      return {
+        ...state,
+        count: state.count * 2,
+        lastAction: "you just multiplied the count",
+      };
     case "reset":
-      return { ...state, count: 0, lastAction: "reset count" };
+      return { ...state, count: 0, lastAction: "you just did reset count" };
     case "update_username":
       return {
         ...state,
         // getting the dynamic data from the input
-        username: action.payload,
-        lastAction: "updated username",
+        username: action.payload, //playload is a convention name you can use any name you want
+        lastAction: "you just updated username",
       };
     case "toggle_theme":
       return {
         ...state,
         darkMode: !state.darkMode,
-        lastAction: `switched to ${state.darkMode ? "light" : "dark"} mode`,
+        lastAction: `you just switched to ${
+          state.darkMode ? "light" : "dark"
+        } mode`,
         // in here it's reversed as the last action deals with the old not the new dark mode vlaue
       };
   }
@@ -34,18 +48,13 @@ const reducer = (state, action) => {
 export default function UseReducer() {
   // here you start declaring state (stuff to manipulate) and dispatch (which will have the actions changing the state)
 
-  // {count: 0,
-  // username: "",
-  // darkMode: true,
-  // lastAction: "no actions yet",} <= state
-
   // reducer ? go to line 4
   const [state, dispatch] = useReducer(reducer, {
     count: 0,
     username: "",
     darkMode: true,
     lastAction: "no actions yet",
-  });
+  }); //what was between the {} is the state initial value
 
   // this is just to acctually change the theme
   useEffect(() => {
@@ -71,7 +80,7 @@ export default function UseReducer() {
           value={state.username}
           onChange={(e) => {
             // here we are giving it a payload to give a vlue up there in the reducer as a dynamic data
-            dispatch({ type: "update_username", payload: e.target.value });
+            dispatch({ type: "update_username", payload: e.target.value }); //whatever is between the () is the action object including type
           }}
           placeholder="enter a username"
         />

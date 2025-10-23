@@ -31,10 +31,11 @@ import GraphQl from "./GraphQl/GraphQl";
 function App() {
   return (
     <>
+      {/* we wrapped the app in the UseContext compoenet jut in case you will try to import the ContextComp */}
       <UseContext>
         <div className="mainContainer">
           {/* import your comp. right here */}
-          <GraphQl />
+          <UseDebugValue />
         </div>
       </UseContext>
     </>

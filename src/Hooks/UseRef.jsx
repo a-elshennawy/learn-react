@@ -36,6 +36,7 @@ export default function UseRef() {
 
   //   to track when count
   useEffect(() => {
+    //it stores the count before the render and new vlalue will be shown in the UI
     previousCount.current = count;
   }, [count]);
   return (

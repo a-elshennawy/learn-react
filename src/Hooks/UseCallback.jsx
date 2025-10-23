@@ -1,4 +1,4 @@
-// it's almost the same as useMemo but instead storing the vlaue the coming out of the function it stores the whole function
+// it's almost the same as useMemo but instead storing the vlaue the coming out of the function it stores THE WHOLE FUNCTION
 import { useCallback, useEffect, useState } from "react";
 export default function UseCallback() {
   // this the state that will be changing and cause the issue of re-rendering

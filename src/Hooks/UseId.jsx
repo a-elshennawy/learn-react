@@ -17,5 +17,7 @@ export default function UseId() {
   );
 }
 // so important for those who gonna use SSR (server side rendering)
+// because the id generated on the server will be the same on the client
+// preventing hydration mismatches
 // so you don't have to overwhelm yourself with naming
 // DO NOT USE THAT FOR KEY={} WHEN MAPPING OVER SOMETHING TO CREATE A LIST WE DON'T DO THAT HERE :(
