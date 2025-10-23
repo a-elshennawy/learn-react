@@ -14,7 +14,6 @@
 <li>UseId()</li>
 <li>UseTransition()</li>
 <li>UseDeferredValue()</li>
-<li>UseSyncExternalStore()</li>
 <li>UseDebugValue()</li>
 <li>UseFormStatus()</li>
 <li>UseFormState()</li>

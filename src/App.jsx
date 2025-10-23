@@ -13,7 +13,6 @@ import UseMemo from "./Hooks/UseMemo";
 import UseReducer from "./Hooks/UseReducer";
 import UseRef from "./Hooks/UseRef";
 import UseState from "./Hooks/UseState";
-import UseSyncExternalStore from "./Hooks/UseSyncExternalStore/UseSyncExternalStore";
 import UseTransition from "./Hooks/UseTransition";
 import UseFormState from "./Hooks/UseFormState";
 import UseActionState from "./Hooks/UseActionState";
@@ -35,7 +34,7 @@ function App() {
       <UseContext>
         <div className="mainContainer">
           {/* import your comp. right here */}
-          <UseDebugValue />
+          <Use />
         </div>
       </UseContext>
     </>

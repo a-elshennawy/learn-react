@@ -7,6 +7,9 @@ export default function UseOptimistic() {
   const [newTask, setNewTask] = useState("");
 
   // here we start using our hook
+  // it takes 2 arguments
+  // 1st is the current state that you want to optimistically update (tasks)
+  // 2nd is a function that defines how to update the state optimistically
   const [optimisticTasks, addOptimisticTasks] = useOptimistic(
     tasks,
     (state, newTasks) => [...state, newTasks]
@@ -32,6 +35,7 @@ export default function UseOptimistic() {
 
     // optimistically updating UI
     addOptimisticTasks(task);
+    console.log("added optimistacally");
     setNewTask("");
 
     try {
@@ -39,6 +43,7 @@ export default function UseOptimistic() {
 
       // if successfull then final update
       setTasks([...tasks, task]);
+      console.log("actually added");
     } catch (err) {
       // the optimistic update will roll back automatically if error happened
       console.error("failed adding task:", err);
