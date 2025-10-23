@@ -26,5 +26,3 @@ npx playwright test --headed
 
 c- You can also open the UI mode to interactively debug your tests
 npx playwright test --ui
-
-note: i changed the playwright.yml in the .github so we can push the repo and commit it without issues as we do not have any deployment for this repo ratrher than just testing locally

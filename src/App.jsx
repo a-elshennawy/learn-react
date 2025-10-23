@@ -35,7 +35,7 @@ function App() {
       <UseContext>
         <div className="mainContainer">
           {/* import your comp. right here */}
-          <PlayWrigthCounter />
+          <GraphQl />
         </div>
       </UseContext>
     </>

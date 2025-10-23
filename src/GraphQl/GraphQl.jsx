@@ -1,11 +1,8 @@
 import { Client, Provider, cacheExchange, fetchExchange, useQuery } from "urql";
 // let's discuss the imports first
 // - client : main brain of URQL, it's the "connection manager" that knows where to send requests (API URL)
-
 // - Provider : just like Context API making sure connection manager available for all child comps.
-
 // - chacheExchange : assuring to avoid unneeded calls in case you requested the same thing again it will give you a chached version for better performance
-
 // - fetchExchange : sends HTTP requests to the GraphQL server, like fetch(), converts GraphQL queries into network requests
 
 // here we create the client
@@ -17,7 +14,7 @@ const client = new Client({
 // Your actual GraphQL component that will use the data
 function GraphQLContent() {
   // Define your GraphQL query
-  //   which will be soooo specific as graphQl only gives what back what u asked for
+  // which will be soooo specific as graphQl only gives what back what u asked for
   const GET_CHARACTERS = `
     query {
       characters {
@@ -28,6 +25,7 @@ function GraphQLContent() {
           origin{
           name
           }
+          status
           image
         }
       }
@@ -47,24 +45,39 @@ function GraphQLContent() {
   if (error) return <p>Error: {error.message}</p>;
 
   // display the data
+  // what does the data have ? it have characters > results > array of characters objects (look at your query above)
   return (
     <>
-      <div>
-        <h1>GraphQL Testing using urQl</h1>
-        <h3>Rick and morty characters :</h3>
-        <div>
-          {data.characters.results.map((character, index) => (
-            <div key={index}>
-              <h4>
-                {character.name} / {character.gender} / {character.species} /{" "}
-                {""}
-                {character.origin.name}
-              </h4>
-              <img src={character.image} alt="" />
-            </div>
-          ))}
-        </div>
-      </div>
+      <h1>GraphQL Testing using urQl</h1>
+      <h3>Rick and morty characters :</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>name</th>
+            <th>gender</th>
+            <th>species</th>
+            <th>origin</th>
+            <th>status</th>
+            <th>image</th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.characters.results.map((character, index) => {
+            return (
+              <tr key={index}>
+                <td>{character.name}</td>
+                <td>{character.gender}</td>
+                <td>{character.species}</td>
+                <td>{character.origin.name}</td>
+                <td>{character.status}</td>
+                <td>
+                  <img src={character.image} alt={character.name} width="100" />
+                </td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
     </>
   );
 }

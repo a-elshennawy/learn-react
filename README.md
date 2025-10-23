@@ -41,7 +41,7 @@
 <li>Zustand (import MainComp.jsx) check ComplexStore.js first</li>
 </ol>
 <hr>
-<h4>also find Testin (unit & E2E) :</h4>
+<h4>also find Testing (unit & E2E) :</h4>
 <ol>
 <li>in src/jestTesting readme.md to demonistration unit testing using Jest</li>
 <li>in src/VitestTesting readme.md to demonistration unit testing using Vitest</li>
