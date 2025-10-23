@@ -1,6 +1,6 @@
 here i will tell you about jest for testing:
 
-1- you need to install stuff to make it it work ast jest and vite are not really going side by side (but works)
+1- you need to install stuff to make it work as jest and vite are not really going side by side (but works)
 npm install --save-dev jest @testing-library/react @testing-library/jest-dom jest-environment-jsdom
 
 2- create jest.config.cjs in root (explaination there)

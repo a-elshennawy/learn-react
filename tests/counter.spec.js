@@ -1,5 +1,6 @@
 import { test, expect } from "@playwright/test";
 
+// describe your test, then async function with page parameter
 test("should increment and decrement the counter", async ({ page }) => {
   // 1. Visit your application's base URL.
   // Make sure your Vite dev server is running (npm run dev)

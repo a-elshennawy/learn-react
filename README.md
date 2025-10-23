@@ -43,7 +43,7 @@
 <hr>
 <h4>also find Testin (unit & E2E) :</h4>
 <ol>
-<li>in src/jesttesting readme.md to demonistration unit testing using Jest</li>
+<li>in src/jestTesting readme.md to demonistration unit testing using Jest</li>
 <li>in src/VitestTesting readme.md to demonistration unit testing using Vitest</li>
 <li>in src/CypressTesting readme.md to demonistration E2E testing using Cypress (will have to import the CypressCounter.jsx inside the folder)</li>
 <li>in src/PlayWrightTesting readme.md to demonistration E2E testing using Playwright (will have to import the PlayWrightCounter.jsx inside the folder)</li>

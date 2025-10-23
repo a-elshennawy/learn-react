@@ -17,5 +17,16 @@ describe("Counter Component", () => {
 
     // 6. Assert that the count is back to 0
     cy.get("h1").should("contain", "Count : 0");
+
+    cy.get("button").contains("-").click();
+    cy.get("h1").should("contain", "Count : -1");
+
+    // extra assurings
+    cy.get("button").contains("+").click();
+    cy.get("h1").should("contain", "Count : 0");
+    cy.get("button").contains("+").click();
+    cy.get("h1").should("contain", "Count : 1");
+    cy.get("button").contains("+").click();
+    cy.get("h1").should("contain", "Count : 2");
   });
 });

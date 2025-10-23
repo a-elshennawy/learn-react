@@ -1,4 +1,3 @@
-// jest.config.js
 module.exports = {
   // This tells Jest to use the browser-like environment you installed.
   testEnvironment: "jsdom",
@@ -15,3 +14,5 @@ module.exports = {
     "\\.(css|less|scss)$": "identity-obj-proxy",
   },
 };
+
+// you can actually copy this code and use it anywhere you want to setup jest with react and vite

@@ -26,6 +26,7 @@ import MainComp from "./ZustandStores/Components/MainComp";
 import CypressCounter from "./CypressTesting/CypressCounter";
 import PlayWrigthCounter from "./PlayWrightTesting/PlayWrigthCounter";
 import GraphQl from "./GraphQl/GraphQl";
+import Counter from "./JestTesting/Counter";
 
 function App() {
   return (
@@ -34,7 +35,7 @@ function App() {
       <UseContext>
         <div className="mainContainer">
           {/* import your comp. right here */}
-          <MainComp />
+          <PlayWrigthCounter />
         </div>
       </UseContext>
     </>
@@ -42,3 +43,5 @@ function App() {
 }
 
 export default App;
+// make sur eto import PlaywrightCounter.jsx component to avoid X in GitHub as PlayWright does CI/CD testing
+// so the compoenet pushed should be the one used in the testing

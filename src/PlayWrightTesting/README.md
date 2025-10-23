@@ -3,7 +3,7 @@ it's another E2E methiod but with cross browser testing ability supporting more 
 1- npm init playwright@latest to install and initialize setup
 it will :
 a- sets up a Playwright configuration file (playwright.config.js).
-b- creates a basic example test.
+b- creates a basic example test. (we deleted it)
 c- downloads the browser binaries necessary to run your tests.
 d- adds a test script to your package.json file
 
@@ -14,7 +14,7 @@ In your case, when you set up Playwright, it asks if you want to add a workflow 
 
 note: after it finishes it will create many folder but your customized tests goes in (test) and you can have a look on the examples it created for more understanding
 
-2- let's start by writing our first test in the folder called (tests) created in root of your project by creating Counter.spec.js in the tests folder and importing the Counter.jsx in app.jsx as it tests app.jsx just like cypress
+2- let's start by writing our first test in the folder called (tests) created in root of your project by creating Counter.spec.js in the tests folder and importing the Counter.jsx in app.jsx as it tests app.jsx just like cypress (syntax is a bit different but same logic)
 
 3- testing ?
 a- making sure u did the npm run dev and in your package.json make sure in scripts you have "test:e2e": "playwright test" then npm test:e2e

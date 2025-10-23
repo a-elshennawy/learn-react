@@ -4,10 +4,10 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import Counter from "./Counter";
 
-// the below is a jest functionthat groups related tests
+// the below is a jest function that groups related tests
 describe("counter comp", () => {
   // test is the core jest function defining an individual test case
-  // takes description of what should the test doand a function containing the test logic
+  // takes description of what should the test do and a function containing the test logic
   // test case 1: counter should display initial value of 0
   test("counter should display initial value of 0", () => {
     render(<Counter />);
