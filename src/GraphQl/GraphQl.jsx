@@ -8,7 +8,7 @@ import { Client, Provider, cacheExchange, fetchExchange, useQuery } from "urql";
 // here we create the client
 const client = new Client({
   url: "https://rickandmortyapi.com/graphql",
-  exchanges: [cacheExchange, fetchExchange],
+  exchanges: [cacheExchange, fetchExchange], //<-- important as those are the exchabges you will need to use
 });
 
 // Your actual GraphQL component that will use the data
@@ -36,7 +36,6 @@ function GraphQLContent() {
 
   // Use the hook - it automatically runs when component mounts
   const [result] = useQuery({ query: GET_CHARACTERS });
-
   // Extract what you need
   const { data, fetching, error } = result;
 
